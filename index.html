@@ -233,15 +233,79 @@
                     <!-- <i class="ri-menu-line sidebar-toggle me-3 d-block d-md-none"></i> -->
                     <h5 class="fw-bold mb-0 me-auto">Dashboard</h5>
 
-                    <div class="dropdown me-3 d-sm-block">
-                        <div class="cursor-pointer dropdown-toggle navbar-link" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="nav-item dropdown">
+                        <a class="cursor-pointer primary mx-1 dropdown-toggle navbar-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown mx-1 me-3 d-sm-block">
+                        <div class="cursor-pointer primary dropdown-toggle navbar-link" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-regular fa-bell"></i>
                         </div>
 
-                        <div class="dropdown-menu fx-dropdown-menu">
-                            <h5 class="p-3 bg-primary text-light">Notifications</h5>
+                        <div class="dropdown-menu navdropdown-menu">
+                            <div class="navdropdown-title">
+                                <h5 class="p-3 text-center">Notifications</h5>
+                            </div>
+                            <div class="navdropdown-body">
+                                <ul class="list-group list-group-flush d-flex justify-content-between align-items-start">
+                                    <li class="dropdown-item">
+                                        <a href="#">
+                                            <div class="me-auto">
+                                                <div class="notification-heading">Custom Heading</div>
+                                                <p class="notification-body">Content for list item</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="dropdown-item">
+                                        <a href="#">
+                                            <div class="me-auto">
+                                                <div class="notification-heading">Custom Heading</div>
+                                                <p class="notification-body">Content for list item</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="dropdown-item">
+                                        <a href="#">
+                                            <div class="me-auto">
+                                                <div class="notification-heading">Custom Heading</div>
+                                                <p class="notification-body">Content for list item</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="dropdown-item">
+                                        <a href="#">
+                                            <div class="me-auto">
+                                                <div class="notification-heading">Custom Heading</div>
+                                                <p class="notification-body">Content for list item</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown me-3 d-sm-block">
+                        <div class="cursor-pointer primary dropdown-toggle navbar-link" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+
+                        <div class="dropdown-menu navdropdown-menu">
+                            <h5 class="p-3 bg-primary text-center">Notifications</h5>
                             <div class="list-group list-group-flush">
-                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start">
+                                <a href="#" class="dropdown-item list-group-item list-group-item-action d-flex justify-content-between align-items-start">
                                     <div class="me-auto">
                                         <div class="fw-semibold">Subheading</div>
                                         <span class="fs-7">Content for list item</span>
@@ -286,15 +350,27 @@
 
                     <div class="dropdown">
                         <div class="d-flex align-items-center cursor-pointer dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="me-2 d-none d-sm-block">John Doe</span>
-                            <img class="navbar-profile-image"
-                                src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="Image">
+                            <span class="me-2 d-none d-sm-block">Mwendwa John</span>
+                            <img class="profile-photo m-1" src="assets/images/profile-1.jpg" alt="Image">
                         </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu m-2" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-layer-group me-2"></i>
+                                Dashboard</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> 
+                                <i class="fa-solid fa-person-shelter me-2"></i> 
+                                Profile </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-gear me-2"></i> 
+                                Settings</a>
+                            </li>
+                            <!-- Button trigger modal -->
+                            <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#logOutModal">
+                                <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>
+                                Log Out
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -302,17 +378,14 @@
 
                 <!-- start: Content -->
                 <div class="p-1 py-4">
-
                     <!-- start: Summary modified -->
                     <section class="summary-section">
                         <div class="row px-3 g-3">
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <a href="#" class="custom-card d-flex justify-content-between">
-                                    <div>
-                                        <i class="fa-solid fa-hand-holding-dollar custom-card-icon mb-2 icon-primary"></i>
-                                    </div>
+                                    <i class="fa-solid fa-hand-holding-dollar custom-card-icon mb-2 icon-primary"></i>
                                     <div class="wrapper">
-                                        <h1>$435</h1>
+                                        <h1 class="primary">$435</h1>
                                         <div class="float-end text-muted">Sales</div>
                                     </div>
                                 </a>
@@ -320,31 +393,31 @@
                             
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <a href="#" class="custom-card d-flex justify-content-between">
+                                    <i class="fa-solid fa-cart-shopping custom-card-icon mb-2 icon-success"></i>
                                     <div>
-                                        <i class="fa-solid fa-cart-shopping custom-card-icon mb-2 icon-success"></i>
-                                        <div>Sales</div>
+                                        <h1 class="success">6,435</h1>
+                                        <div class="float-end text-muted">Employees</div>
                                     </div>
-                                    <h4>$435</h4>
                                 </a>
                             </div>
         
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <a href="#" class="custom-card d-flex justify-content-between">
-                                    <div>
-                                        <i class="fa-solid fa-paintbrush custom-card-icon mb-2 icon-danger"></i>
-                                        <div>Sales</div>
+                                    <i class="fa-solid fa-paintbrush custom-card-icon mb-2 icon-danger"></i>
+                                    <div class="wrapper">
+                                        <h1 class="danger">$435</h1>
+                                        <div class="float-end text-muted">Sales</div>
                                     </div>
-                                    <h4>$435</h4>
                                 </a>
                             </div>
         
                             <div class="col-12 col-sm-6 col-lg-3">
                                 <a href="#" class="custom-card d-flex justify-content-between">
-                                    <div>
-                                        <i class="fa-solid fa-handshake-angle custom-card-icon mb-2 icon-warning"></i>
-                                        <div>Sales</div>
+                                    <i class="fa-solid fa-handshake-angle custom-card-icon mb-2 icon-warning"></i>
+                                    <div class="wrapper">
+                                        <h2 class="warning">$435</h2>
+                                        <div class="float-end text-muted">Sales</div>
                                     </div>
-                                    <h4>$435</h4>
                                 </a>
                             </div>
                         </div>
@@ -357,7 +430,7 @@
                             <a href="#"
                                 class="text-dark text-decoration-none bg-white p-3 rounded shadow-sm d-flex justify-content-between summary-primary">
                                 <div>
-                                    <i class="ri-shopping-cart-2-line summary-icon bg-primary mb-2"></i>
+                                    <i class="fa-solid fa-hand-holding-dollar summary-icon bg-primary mb-2"></i>
                                     <div>Sales</div>
                                 </div>
                                 <h4>$435</h4>
@@ -367,7 +440,7 @@
                             <a href="#"
                                 class="text-dark text-decoration-none bg-white p-3 rounded shadow-sm d-flex justify-content-between summary-indigo">
                                 <div>
-                                    <i class="ri-shopping-cart-2-line summary-icon bg-indigo mb-2"></i>
+                                    <i class="fa-solid fa-cart-shopping summary-icon bg-black mb-2"></i>
                                     <div>Sales</div>
                                 </div>
                                 <h4>$435</h4>
@@ -377,7 +450,7 @@
                             <a href="#"
                                 class="text-dark text-decoration-none bg-white p-3 rounded shadow-sm d-flex justify-content-between summary-success">
                                 <div>
-                                    <i class="ri-shopping-cart-2-line summary-icon bg-success mb-2"></i>
+                                    <i class="fa-solid fa-paintbrush summary-icon bg-success mb-2"></i>
                                     <div>Sales</div>
                                 </div>
                                 <h4>$435</h4>
@@ -387,7 +460,7 @@
                             <a href="#"
                                 class="text-dark text-decoration-none bg-white p-3 rounded shadow-sm d-flex justify-content-between summary-danger">
                                 <div>
-                                    <i class="ri-shopping-cart-2-line summary-icon bg-danger mb-2"></i>
+                                    <i class="fa-solid fa-handshake-angle summary-icon bg-danger mb-2"></i>
                                     <div>Sales</div>
                                 </div>
                                 <h4>$435</h4>
@@ -442,7 +515,31 @@
         </main>
         <!-- end: Main -->
     </div>
+
     
+
+    <!-- start: Logout modal -->
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="logOutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <span class="modal-icon"><i class="fa-regular fa-face-sad-tear"></i></span>
+                    <h2 class="primary">We're sad to see you go!</h2>
+                    <p>Are you sure you want to log out?</p>
+
+                    <div class="my-3">
+                        <button type="button" class="button" data-bs-dismiss="modal">No, Stay</button>
+                        <button type="button" class="button btn-danger">LogOut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: Logout modal -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
