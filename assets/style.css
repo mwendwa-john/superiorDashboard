@@ -247,7 +247,7 @@ section .section-title {
 }
 
 body {
-    width: 100vw !important;
+    width: 100% !important;
     height: 100vh !important;
     overflow-x: hidden !important;
     font-family: 'Poppins', sans-serif;
