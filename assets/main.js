@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // start: sidebar toggle
     var sidebarToggle = document.querySelector('.sidebar-toggle');
     sidebarToggle.addEventListener('click', function() {
         var sidebar = document.querySelector('.sidebar');
@@ -48,6 +49,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    var sidebarToggleDash = document.getElementById('sidebarToggle');
+    sidebarToggleDash.addEventListener('click', function() {
+        var sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('collapsed');
+
+        if (sidebar.classList.contains('collapsed')) {
+            sidebar.addEventListener('mouseleave', function() {
+                var dropdownMenus = document.querySelectorAll('.sidebar-dropdown-menu');
+                dropdownMenus.forEach(function(menu) {
+                    menu.style.display = 'none';
+                });
+
+                var dropdowns = document.querySelectorAll('.sidebar-menu-item.has-dropdown, .sidebar-dropdown-menu-item.has-dropdown');
+                dropdowns.forEach(function(dropdown) {
+                    dropdown.classList.remove('focused');
+                });
+            });
+        }
+    });
+
+    // end: sidebar toggle
 
     var sidebarOverlay = document.querySelector('.sidebar-overlay');
     sidebarOverlay.addEventListener('click', function() {

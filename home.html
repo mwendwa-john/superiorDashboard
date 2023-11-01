@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="assets/images/superiorLogo.png" type="image/x-icon">
+    <title>SHK | HRMS</title>
+
+    <!-- Fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom JS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="home-bg">
+    <div class="home container-fluid overflow-auto">
+        <!-- start: Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/superiorLogo.png" alt="Logo" class="d-inline-block ms-3 me-3">
+                </a>
+                <h5 class="text-center d-none d-lg-block">Superior Hotel | HR Management System</h5>
+
+                <div class="dropdown">
+                    <div class="d-flex align-items-center cursor-pointer dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-2 d-none d-sm-block">Mwendwa John</span>
+                        <img class="profile-photo m-1" src="assets/images/profile-1.jpg" alt="Image">
+                    </div>
+                    <ul class="dropdown-menu m-2" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-layer-group me-2"></i>
+                            Dashboard</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"> 
+                            <i class="fa-solid fa-person-shelter me-2"></i> 
+                            Profile </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-gear me-2"></i> 
+                            Settings</a>
+                        </li>
+                        <!-- Button trigger modal -->
+                        <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#logOutModal">
+                            <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>
+                            Log Out
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end: Navbar -->
+        <!-- start: Main Content -->
+        <div class="py-2">
+            <section class="home-section">
+                <div class="container text-center">
+                    <h2 class="section-title">Welcome aboard our HR system!</h2>
+                    <div class="row align-items-center px-2">
+                        <div class="col-lg-6 custom-card home-card-left">
+                            <h1>Hey there!</h1>
+                            <p class="fs-6">
+                                So, picture this: you know how HR management systems can sometimes be seen as, well, a little dull? We totally get it! That's why we decided to spice things up with our fun-about section! We believe in making work enjoyable and our system reflects that spirit. Imagine a world of seamless onboarding, effortless leave management, and stress-free performance reviews – all while having a blast doing it! 
+                                So why waste any more time dealing with outdated systems or juggling spreadsheets like a circus performer? Jump on board with us and let us do the heavy lifting while you enjoy the rhythm and flow of streamlined HR management. Welcome to the gateway of HR bliss!
+                            </p>
+                            <p> - cheers to smiling faces and happy workplaces!</p>
+                            <button class="button">Log In</button>
+                            
+                        </div>
+                        <div class="col-lg-6 custom-card">
+                            <img src="assets/images/Welcome aboard.svg" alt="login" class="img-fluid">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- end: Main Content -->
+        <footer>
+            <div class="row px-3">
+                <div class="col-12">
+                    <div class="text-center small text-muted">
+                        <p class="primary">
+                            &copy; <span id="currentYear"></span> Superior Hotels Kenya | Human resource Management System
+                        </p>
+                    </div>
+                    <script>
+                        const currentYear = new Date().getFullYear();
+                        document.getElementById("currentYear").textContent = currentYear;
+                    </script>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/main.js"></script>
+</body>
+</html>

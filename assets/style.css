@@ -37,8 +37,46 @@
     --box-shadow-2: 0 .25rem .25rem var(--color-light);
 }
 
-/* start: error pages */
+/* start: home page */
+.home-bg {
+    height: 100vh;
+    background: url(/assets/images/blob.svg) no-repeat;
+    background-size: cover;
+}
 
+.home nav {
+    display: flex;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow-1);
+}
+
+.navbar-brand {
+    color: var(--color-primary);
+    transition: all 600ms ease;
+}
+
+.navbar-brand img {
+    width: 2rem;
+}
+
+.navbar-brand:hover {
+    color: var(--color-primary);
+    transform: scale(1.10);
+}
+
+.home-section .section-title {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.home-section .home-card-left {
+    background: var(--color-light);
+    border-radius: var(--card-border-radius);
+    padding: 3rem;
+}
+/* end: home page */
+/* start: error pages */
 .error_page {
     height: 100vh;
     padding: 40px 0;
@@ -154,6 +192,11 @@ section .section-title {
 
 .form-section button:hover {
     transform: scale(1.05);
+}
+
+.form-section .auth-icon {
+    height: 2rem;
+    width: 2rem;
 }
 
 .form-section .form-group input {
@@ -400,8 +443,25 @@ b {
 
 
 /* end: Global */
+/* start: scrollbar */
+::-webkit-scrollbar {
+    width: .5rem;
+}
 
+::-webkit-scrollbar-track {
+    background-color: var(--color-background);
+}
 
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    padding-right: 10px;
+    background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-primary);
+}
+/* end: scrollbar */
 
 /* start: Sidebar */
 .sidebar-overlay {
@@ -601,7 +661,7 @@ main {
 
 
 /* start: Navbar */
-nav {
+.main-body nav {
     display: flex;
     align-items: center;
     margin-top: 1rem;
