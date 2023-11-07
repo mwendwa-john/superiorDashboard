@@ -26,7 +26,7 @@
                     <h3 class="text-center">Superior Hotel <br><span>Kenya</span></h3>
                 </a>
                 <i class="sidebar-toggle fa-solid fa-angles-left ms-auto fs-6 d-none d-md-block"></i>
-                <i class="fa-solid fa-xmark ms-auto fs-6 d-sm-block d-md-none d-lg-none" id="sidebarClose"></i>
+                <!-- <i class="fa-solid fa-xmark ms-auto fs-6 d-none d-sm-block d-md-none d-lg-none" id="sidebarClose"></i> -->
             </div>
             <ul class="sidebar-menu p-3 m-0 mb-0">
                 <li class="sidebar-menu-divider mt-3 mb-1 text-uppercase">Main</li>
@@ -146,7 +146,7 @@
                 </li>
                 <!-- tickets -->
                 <li class="sidebar-menu-item">
-                    <a href="blank.html">
+                    <a href="#">
                         <i class="fa-solid fa-receipt sidebar-menu-item-icon"></i>
                         Tickets
                     </a>
@@ -180,7 +180,7 @@
                 </li>
                 <!-- policies -->
                 <li class="sidebar-menu-item">
-                    <a href="blank.html">
+                    <a href="#">
                         <i class="fa-solid fa-clipboard-list sidebar-menu-item-icon"></i>
                         Policies
                     </a>
@@ -497,7 +497,6 @@
                 <!-- start: Navbar -->
                 <nav class="px-3 py-2">
                     <i class="fa-brands fa-slack me-3 d-none d-md-block cursor-pointer" id="sidebarToggle"></i>
-                    <i class="fa-solid fa-bars me-3 d-md-none cursor-pointer" id="sidebarToggleSm"></i>
                     <h5 class="cursor-pointer mb-0 me-auto">Dashboard</h5>
 
                     <div class="nav-item dropdown">
@@ -594,76 +593,104 @@
 
                 <!-- start: Content -->
                 <div class="p-1 py-4">
-                    <!-- start: Summary -->
-                    <section class="summary-section">
-                        <div class="row px-3 g-3">
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <a href="#" class="custom-card d-flex justify-content-between">
-                                    <i class="fa-solid fa-hand-holding-dollar custom-card-icon mb-2 icon-primary"></i>
-                                    <div class="wrapper">
-                                        <h1 class="primary">35</h1>
-                                        <div class="float-end text-muted">Casuals</div>
-                                    </div>
-                                </a>
-                            </div>
+                    <!-- start: all employees -->
+                    <section class="employee-section">
+                        <div class="cursor-pointer primary d-flex justify-content-center align-items-center">
+                            <a href="employees.html">
+                                <i class="fa-solid fa-grip employee-select mx-3"></i>
+                            </a>
+                            <a href="userTable.html">
+                                <i class="fa-solid fa-bars employee-select mx-3"></i>
+                            </a>
                             
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <a href="#" class="custom-card d-flex justify-content-between">
-                                    <i class="fa-solid fa-cart-shopping custom-card-icon mb-2 icon-success"></i>
-                                    <div>
-                                        <h1 class="success">6,435</h1>
-                                        <div class="float-end text-muted">Employees</div>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="mx-3">
+                                <button class="button">
+                                    <i class="fa-solid fa-plus me-2"></i> 
+                                    Add Employee
+                                </button>
+                            </a>
+                        </div>
+                        <!-- start: user table -->
+                        <div class="container-fluid px-3 py-5">
+                            <div class="table-section overflow-auto">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Profile</th>
+                                            <th scope="col">Employee Name</th>
+                                            <th scope="col">Employee ID</th>
+                                            <th scope="col">Mobile</th>
+                                            <th scope="col">Role</th>
+                                            <th scope="col">Payment</th>
+                                            <th scope="col">Join Date</th>
+                                            <th scope="col">Leave</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <img src="assets/images/profile-1.jpg" alt="img" class="profile-photo">
+                                            </td>
+                                            <td>Mwendwa John</td>
+                                            <td>Emp-690</td>
+                                            <td>0706299339</td>
+                                            <td>Software Developer</td>
+                                            <td class="warning">Pending</td>
+                                            <td>4 Oct 2023</td>
+                                            <td class="success">Done</td>
+                                            <td>
+                                                <a class="primary" href="#">Edit</a>
+                                                <a class="danger" href="#">Delete</a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <img src="assets/images/profile-1.jpg" alt="img" class="profile-photo">
+                                            </td>
+                                            <td>Mwendwa John</td>
+                                            <td>Emp-690</td>
+                                            <td>0706299339</td>
+                                            <td>Software Developer</td>
+                                            <td class="warning">Pending</td>
+                                            <td>4 Oct 2023</td>
+                                            <td class="success">Done</td>
+                                            <td>
+                                                <a class="primary" href="#">Edit</a>
+                                                <a class="danger" href="#">Delete</a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <img src="assets/images/profile-1.jpg" alt="img" class="profile-photo">
+                                            </td>
+                                            <td>Mwendwa John</td>
+                                            <td>Emp-690</td>
+                                            <td>0706299339</td>
+                                            <td>Software Developer</td>
+                                            <td class="warning">Pending</td>
+                                            <td>4 Oct 2023</td>
+                                            <td class="success">Done</td>
+                                            <td>
+                                                <a class="primary" href="#">Edit</a>
+                                                <a class="danger" href="#">Delete</a>
+                                            </td>
+                                        </tr>
         
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <a href="#" class="custom-card d-flex justify-content-between">
-                                    <i class="fa-solid fa-paintbrush custom-card-icon mb-2 icon-danger"></i>
-                                    <div class="wrapper">
-                                        <h1 class="danger">35</h1>
-                                        <div class="float-end text-muted">Tasks</div>
-                                    </div>
-                                </a>
-                            </div>
-        
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <a href="#" class="custom-card d-flex justify-content-between">
-                                    <i class="fa-solid fa-handshake-angle custom-card-icon mb-2 icon-warning"></i>
-                                    <div class="wrapper">
-                                        <h2 class="warning">5</h2>
-                                        <div class="float-end text-muted">Projects</div>
-                                    </div>
-                                </a>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                        <!-- end: user table -->
                     </section>
-                    <!-- end: Summary -->
+                    <!-- end: all employees -->
 
-                    <!-- start: Graph -->
-                    <div class="row g-3 mt-2">
-                        <div class="col-12 col-md-7 col-xl-8">
-                            <div class="card border-0 shadow-sm h-100">
-                                <div class="card-header bg-white">
-                                    Sales
-                                </div>
-                                <div class="card-body">
-                                    <canvas id="sales-chart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-5 col-xl-4">
-                            <div class="card border-0 shadow-sm h-100">
-                                <div class="card-header bg-white">
-                                    Visitors
-                                </div>
-                                <div class="card-body">
-                                    <canvas id="visitors-chart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end: Graph -->
                 </div>
                 <!-- end: Content -->
 
